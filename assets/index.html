@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>ToDo List</h1>
+
+      <form>
+        <input
+          type="text"
+          class="input-da-tarefa"
+          placeholder="Digite a tarefa"
+          minlength="3"
+          maxlength="35"
+        />
+        <button type="submit" class="enviar-tarefa">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3814/3814305.png"
+            alt=""
+            class="icone-enviar-tarefa"
+          />
+        </button>
+      </form>
+
+      <section class="caixa-das-tarefas">
+        <ul class="lista-das-tarefas"></ul>
+      </section>
+
+      <button class="limpar-tudo">Limpar Tudo</button>
+
+    </main>
+  </body>
+
+  <script src="main.js"></script>
+</html>

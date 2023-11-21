@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root{
+    --heavy-gray: #383838;
+    --black-one: #0e0e0e;
+    --heavy-blue: #012547;
+    --light-blue: #00638a;
+    --white: #e2e2e2;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--black-one) 45%, var(--heavy-blue));
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1{
+    color: var(--white);
+    margin: 5vh auto;
+    font-size: 2.5rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-da-tarefa{
+    width: 500px;
+    height: 5vh;
+    max-width: 75%;
+    border: none;
+    outline: none;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.enviar-tarefa{
+    background-color: transparent;
+    border: none;
+}
+
+.icone-enviar-tarefa{
+    height: 35px;
+    width: 40px;
+    margin-left: .5vw;
+}
+
+.icone-enviar-tarefa:hover{
+   filter: drop-shadow( 2px 0 10px var(--light-blue));
+}
+
+.enviar-tarefa:hover{
+    cursor: pointer;
+}
+
+.caixa-das-tarefas{
+    margin: 5vh auto;
+}
+
+p{
+    color: var(--white);
+    font-size: 1.3rem;
+    padding-left: 5px;
+}
+
+
+
+.li-da-tarefa {
+   display: flex;
+   justify-content: space-between; /* Adicionado para distribuir o espaço entre os itens */
+   align-items: center;
+   margin: auto;
+   width: 50vw;
+   height: 5vh;
+   background-color: var(--light-blue);
+   border-bottom: 1px solid var(--white);
+}
+
+.div-dos-botoes {
+    display: flex;
+    margin-left: auto;
+    padding-right: 5px;
+}
+
+@media (max-width: 767px) {
+    p{
+        font-size: 1.1rem;
+    }
+
+    .li-da-tarefa{
+        width: 95%;
+    }
+}
